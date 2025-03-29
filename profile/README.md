@@ -1,4 +1,4 @@
-# RAE API Organization - GitHub Profile
+# RAE API Org
 
 Welcome to the **RAE API Organization**! This GitHub organization is dedicated to providing tools and resources for developers and enthusiasts who want to interact with the Spanish language in creative and programmatic ways. Our flagship project, **rae-api.com**, is an unofficial API for querying the Real Academia Española (RAE) dictionary and related linguistic data.
 
