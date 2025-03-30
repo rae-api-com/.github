@@ -21,10 +21,9 @@ An unofficial API for querying the RAE dictionary. It provides:
 ### 2. **[go-rae](https://github.com/rae-api-com/go-rae)**
 A Go client library for interacting with the RAE API. It simplifies integration with the API for Go developers.
 
-### 3. **rae-tui**
+### 3. **[rae-tui](https://github.com/rae-api-com/rae-tui)**
 A terminal-based user interface (TUI) for exploring the RAE dictionary interactively. Built with `tview` and designed for a seamless user experience.
 
----
 
 ## 🛠️ Features in Progress
 
@@ -33,7 +32,7 @@ A terminal-based user interface (TUI) for exploring the RAE dictionary interacti
 - **Improved Parsing**: Handle the chaotic and ever-changing HTML structure of the RAE website.
 - **Authentication**: Introduce API keys to manage usage and prevent abuse.
 - **Rate Limiting**: Ensure fair usage for all users.
-- **Apify Integration**: Create complex workflows using [https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr](apify integration).
+- **Apify Integration**: Create complex workflows using (https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr)[apify integration].
 
 ## 💡 Inspiration
 
