@@ -2,13 +2,11 @@
 
 Welcome to the **RAE API Organization**! This GitHub organization is dedicated to providing tools and resources for developers and enthusiasts who want to interact with the Spanish language in creative and programmatic ways. Our flagship project, **rae-api.com**, is an unofficial API for querying the Real Academia Española (RAE) dictionary and related linguistic data.
 
----
 
 ## 🌟 Mission
 
 The goal of this organization is to make the Spanish language more accessible to developers by providing APIs, libraries, and tools that simplify working with words, definitions, and conjugations. Whether you're building a game like Wordle/PalabReto, creating educational tools, or conducting linguistic research, our resources are here to help.
 
----
 
 ## 🚀 Projects
 
@@ -35,14 +33,12 @@ A terminal-based user interface (TUI) for exploring the RAE dictionary interacti
 - **Improved Parsing**: Handle the chaotic and ever-changing HTML structure of the RAE website.
 - **Authentication**: Introduce API keys to manage usage and prevent abuse.
 - **Rate Limiting**: Ensure fair usage for all users.
-
----
+- **Apify Integration**: Create complex workflows using [https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr](apify integration).
 
 ## 💡 Inspiration
 
 This project was born out of the need for a reliable resource to query Spanish words programmatically. Many developers, including myself, have struggled to find an official API or database for the RAE dictionary. After exploring alternatives like web scraping and reverse-engineering, I decided to create **rae-api.com** to fill this gap.
 
----
 
 ## 🤝 Community
 
@@ -51,7 +47,6 @@ We welcome contributions, feedback, and collaboration! If you're using our tools
 - Educational tools for learning Spanish.
 - Integration with flashcard apps like Anki.
 
----
 
 ## 💬 FAQ
 
@@ -64,15 +59,12 @@ Yes! The API is free to use, but donations are welcome to help maintain the serv
 ### What happens if the RAE changes its website?
 The API relies on scraping the RAE's website, so changes to their HTML structure can temporarily break the service. However, we store parsed data locally to ensure continuity even if scraping becomes temporarily unavailable.
 
----
-
 ## ❤️ Support the Project
 
 Maintaining this API is challenging and resource-intensive. If you find it useful, consider supporting the project:
 - [BuyMeACoffee](https://buymeacoffee.com/sonirico)
 - Spread the word about **rae-api.com**!
 
----
 
 ## 📢 Stay Updated
 
