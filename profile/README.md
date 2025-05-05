@@ -24,6 +24,8 @@ A Go client library for interacting with the RAE API. It simplifies integration 
 ### 3. **[rae-tui](https://github.com/rae-api-com/rae-tui)**
 A terminal-based user interface (TUI) for exploring the RAE dictionary interactively. Built with `tview` and designed for a seamless user experience.
 
+### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
+Raycast extension for querying any Spanish word, verb and conjugations, and so on. Also featuring RAE word of the day, plus an additional command which yields random words.
 
 ## 🛠️ Features in Progress
 
