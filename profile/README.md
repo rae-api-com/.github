@@ -1,75 +1,71 @@
 # RAE API Org
 
-Welcome to the **RAE API Organization**! This GitHub organization is dedicated to providing tools and resources for developers and enthusiasts who want to interact with the Spanish language in creative and programmatic ways. Our flagship project, **rae-api.com**, is an unofficial API for querying the Real Academia Española (RAE) dictionary and related linguistic data.
+Bienvenido/a a la **RAE API Organization**. Aquí encontrarás un conjunto de herramientas y recursos creados para quienes desean interactuar con el idioma español de forma programática. Todo esto surge, en parte, porque la Real Academia Española parece poco interesada en ofrecer una API pública y útil para su diccionario. Así que, ante la ausencia de soluciones oficiales, hemos decidido aportar la nuestra.
 
+Este proyecto es sin ánimo de lucro. Lo hacemos con fines educativos y colaborativos, sin pretender apropiarnos del contenido de la RAE (que, por cierto, mantiene como privado aunque hable del idioma de todos). Usar esta API y sus herramientas depende de ti: cada cual es responsable de cómo emplea estos recursos.
 
-## 🌟 Mission
+## 🌟 Misión
 
-The goal of this organization is to make the Spanish language more accessible to developers by providing APIs, libraries, and tools that simplify working with words, definitions, and conjugations. Whether you're building a game like Wordle/PalabReto, creating educational tools, or conducting linguistic research, our resources are here to help.
+Queremos facilitar el acceso a los datos del español moderno: definiciones, conjugaciones, y más. Si desarrollas juegos de palabras, creas material educativo, o investigas el lenguaje, puedes encontrar aquí una base útil y sencilla, aunque no oficial.
 
-
-## 🚀 Projects
+## 🚀 Proyectos
 
 ### 1. **[rae-api.com](https://rae-api.com)**
-An unofficial API for querying the RAE dictionary. It provides:
-- Definitions of words.
-- Conjugations for verbs.
-- Reverse search (find words based on their definitions).
-- Word of the day.
-- Support for polysemic words and locutions.
+API no oficial para consultar el diccionario de la RAE. Permite:
+- Ver definiciones.
+- Revisar conjugaciones verbales.
+- Hacer búsquedas inversas (encontrar palabras a partir de una definición).
+- Obtener la palabra del día.
+- Gestionar palabras polisémicas y locuciones.
 
 ### 2. **[go-rae](https://github.com/rae-api-com/go-rae)**
-A Go client library for interacting with the RAE API. It simplifies integration with the API for Go developers.
+Cliente en Go para integrar fácilmente la RAE API sobre proyectos en este lenguaje.
 
 ### 3. **[rae-tui](https://github.com/rae-api-com/rae-tui)**
-A terminal-based user interface (TUI) for exploring the RAE dictionary interactively. Built with `tview` and designed for a seamless user experience.
+Interfaz de usuario en la terminal para explorar el diccionario de forma interactiva.
 
 ### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
-Raycast extension for querying any Spanish word, verb and conjugations, and so on. Also featuring RAE word of the day, plus an additional command which yields random words.
+Extensión de Raycast para consultar palabras, conjugaciones, palabra del día y obtener palabras aleatorias, directamente desde tu escritorio.
 
-## 🛠️ Features in Progress
+## 🛠️ En Desarrollo
 
-- **Fuzzy Search**: Improve search results for partial matches or derived words.
-- **Inverse Indexing**: Enable reverse lookups for words based on their definitions.
-- **Improved Parsing**: Handle the chaotic and ever-changing HTML structure of the RAE website.
-- **Authentication**: Introduce API keys to manage usage and prevent abuse.
-- **Rate Limiting**: Ensure fair usage for all users.
-- **Apify Integration**: Create complex workflows using [apify integration](https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr).
-  
-## 💡 Inspiration
+- **Búsqueda difusa:** Resultados útiles aun sin coincidencia exacta o con palabras derivadas.
+- **Índice inverso:** Para búsquedas por definición.
+- **Mejora de parsing:** Adaptándonos a los cambios frecuentes del HTML de la RAE.
+- **Autenticación y límites:** Para garantizar un uso razonable y prevenir abusos.
+- **Integración con Apify:** Para flujos de trabajo avanzados usando [Apify](https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr).
 
-This project was born out of the need for a reliable resource to query Spanish words programmatically. Many developers, including myself, have struggled to find an official API or database for the RAE dictionary. After exploring alternatives like web scraping and reverse-engineering, I decided to create **rae-api.com** to fill this gap.
+## 💡 Inspiración
 
+La falta de una API oficial —o siquiera una base de datos pública de la RAE— ha hecho que muchos hayamos optado por buscar alternativas: scraping, colaboración y algo de paciencia. Este proyecto pretende, modestamente, llenar ese vacío y facilitar el trabajo a quienes necesitan consultar el diccionario sin complicaciones.
 
-## 🤝 Community
+## 🤝 Comunidad
 
-We welcome contributions, feedback, and collaboration! If you're using our tools for your projects, let us know. Some examples of how the API has been used:
-- Word-based games like Wordle/PalabReto.
-- Educational tools for learning Spanish.
-- Integration with flashcard apps like Anki.
+Agradecemos las contribuciones y sugerencias. Si este proyecto te ayuda en tus proyectos (juegos, apps educativas, investigación, integración con sistemas como Anki...), cuéntanoslo y ayuda a mejorar la herramienta.
 
+## 💬 Preguntas Frecuentes
 
-## 💬 FAQ
+### ¿Es esto oficial?
+No. No hay ninguna relación oficial con la RAE. Este proyecto busca facilitar el acceso desarrollando herramientas que la institución, por el momento, no proporciona.
 
-### Is this an official API from the RAE?
-No, this is an unofficial API created to make the RAE's linguistic data more accessible. The HTML structure of the RAE website is complex and changes frequently, so this project aims to simplify access for developers.
+### ¿Puedo usarlo para mi proyecto?
+Sí, es de uso libre, aunque cualquier donación para ayudar con los servidores será bienvenida: [BuyMeACoffee](https://buymeacoffee.com/sonirico).
 
-### Can I use this API for my project?
-Yes! The API is free to use, but donations are welcome to help maintain the server. If you're using it heavily, consider supporting the project via [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+### ¿Qué pasa si la RAE cambia su web?
+La API utiliza scraping. Si la estructura de la web cambia, es posible que algunos servicios se interrumpan temporalmente. Aun así, almacenamos datos localmente para ofrecer continuidad en lo posible.
 
-### What happens if the RAE changes its website?
-The API relies on scraping the RAE's website, so changes to their HTML structure can temporarily break the service. However, we store parsed data locally to ensure continuity even if scraping becomes temporarily unavailable.
+## ❤️ Apoya este proyecto
 
-## ❤️ Support the Project
+Dedicamos tiempo y recursos para mantener esta iniciativa. Si le sacas partido, puedes:
+- Invitarnos a un café en [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+- Compartir **rae-api.com** para que llegue a más gente.
 
-Maintaining this API is challenging and resource-intensive. If you find it useful, consider supporting the project:
-- [BuyMeACoffee](https://buymeacoffee.com/sonirico)
-- Spread the word about **rae-api.com**!
+## 📢 Mantente informado/a
 
+Sigue este repositorio para enterarte de novedades, correcciones y futuras mejoras. Siempre estamos abiertos a aportes y ayuda de la comunidad.
 
-## 📢 Stay Updated
+Gracias por tu interés y por contribuir a que la lengua española sea un poco más accesible en el mundo digital.
 
-Follow this GitHub organization for updates on new features, bug fixes, and future plans. If you have suggestions or want to contribute, feel free to open an issue or pull request.
+---
 
-Thank you for supporting the RAE API project! Together, we can make the Spanish language more accessible to everyone.
-
+[🇬🇧 Read English Version](./README.EN.md)
