@@ -31,6 +31,9 @@ A terminal-based user interface to explore the RAE dictionary interactively.
 ### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
 A Raycast extension to query words, verbs, conjugations, the word of the day, and even get random words—directly from your desktop.
 
+### 5. **[rae-mcp](https://github.com/rae-api-com/rae-mcp)**
+Implementation of a Model Context Protocol (MCP) server for the Royal Spanish Academy (RAE) API. It allows language models to interact with RAE's dictionary and linguistic resources.
+
 ## 🛠️ Features in Progress
 
 - **Fuzzy Search:** More useful results even with inexact matches or derived words.
