@@ -27,6 +27,9 @@ Interfaz de usuario en la terminal para explorar el diccionario de forma interac
 ### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
 Extensión de Raycast para consultar palabras, conjugaciones, palabra del día y obtener palabras aleatorias, directamente desde tu escritorio.
 
+### 5. **[rae-mcp](https://github.com/rae-api-com/rae-mcp)**
+La integración con LLMs mediante Model Context Protocol.
+
 ## 🛠️ En Desarrollo
 
 - **Búsqueda difusa:** Resultados útiles aun sin coincidencia exacta o con palabras derivadas.
