@@ -1,7 +1,3 @@
-Of course! Here’s the English version, matching both the content and the more subtle, honest, and community-driven tone of the Spanish version above:
-
----
-
 # RAE API Org
 
 Welcome to the **RAE API Organization**. Here you’ll find a collection of tools and resources created for those who want to interact with the Spanish language programmatically. The motivation is simple: the Real Academia Española (RAE) hasn’t shown much interest in providing a public, developer-friendly API for its dictionary. So, in the absence of official solutions, we decided to build our own.
