@@ -63,6 +63,17 @@ Dedicamos tiempo y recursos para mantener esta iniciativa. Si le sacas partido, 
 - Invitarnos a un café en [BuyMeACoffee](https://buymeacoffee.com/sonirico).
 - Compartir **rae-api.com** para que llegue a más gente.
 
+Gracias a estas personas y organizaciones por apoyar este proyecto:
+
+<p align="center">
+  <a styhref="https://github.com/madebygps">
+    <img src="https://github.com/madebygps.png" width="64px" alt="@madebygps" />
+  </a>
+  <a href="https://github.com/nikitavoloboev">
+    <img src="https://github.com/nikitavoloboev.png" width="64px" alt="@nikitavoloboev" />
+  </a>
+</p>
+
 ## 📢 Mantente informado/a
 
 Sigue este repositorio para enterarte de novedades, correcciones y futuras mejoras. Siempre estamos abiertos a aportes y ayuda de la comunidad.
