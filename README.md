@@ -59,7 +59,7 @@ We welcome contributions, feedback, and collaboration! If you're using our tools
 No, this is an unofficial API created to make the RAE's linguistic data more accessible. The HTML structure of the RAE website is complex and changes frequently, so this project aims to simplify access for developers.
 
 ### Can I use this API for my project?
-Yes! The API is free to use, but donations are welcome to help maintain the server. If you're using it heavily, consider supporting the project via [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+Yes! The API is free to use, but donations are welcome to help maintain the server. If you're using it heavily, consider supporting the project via [Ko-Fi](https://ko-fi.com/sonirico).
 
 ### What happens if the RAE changes its website?
 The API relies on scraping the RAE's website, so changes to their HTML structure can temporarily break the service. However, we store parsed data locally to ensure continuity even if scraping becomes temporarily unavailable.
