@@ -69,7 +69,7 @@ The API relies on scraping the RAE's website, so changes to their HTML structure
 ## ❤️ Support the Project
 
 Maintaining this API is challenging and resource-intensive. If you find it useful, consider supporting the project:
-- [BuyMeACoffee](https://buymeacoffee.com/sonirico)
+- [Ko-Fi](https://ko-fi.com/sonirico)
 - Spread the word about **rae-api.com**!
 
 ---
