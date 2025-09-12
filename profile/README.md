@@ -52,7 +52,7 @@ Agradecemos las contribuciones y sugerencias. Si este proyecto te ayuda en tus p
 No. No hay ninguna relación oficial con la RAE. Este proyecto busca facilitar el acceso desarrollando herramientas que la institución, por el momento, no proporciona.
 
 ### ¿Puedo usarlo para mi proyecto?
-Sí, es de uso libre, aunque cualquier donación para ayudar con los servidores será bienvenida: [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+Sí, es de uso libre, aunque cualquier donación para ayudar con los servidores será bienvenida: [Ko-Fi](https://ko-fi.com/sonirico).
 
 ### ¿Qué pasa si la RAE cambia su web?
 La API utiliza scraping. Si la estructura de la web cambia, es posible que algunos servicios se interrumpan temporalmente. Aun así, almacenamos datos localmente para ofrecer continuidad en lo posible.
@@ -60,7 +60,7 @@ La API utiliza scraping. Si la estructura de la web cambia, es posible que algun
 ## ❤️ Apoya este proyecto
 
 Dedicamos tiempo y recursos para mantener esta iniciativa. Si le sacas partido, puedes:
-- Invitarnos a un café en [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+- Invitarnos a un café en [Ko-Fi](https://ko-fi.com/sonirico).
 - Compartir **rae-api.com** para que llegue a más gente.
 
 Gracias a estas personas y organizaciones por apoyar este proyecto:
