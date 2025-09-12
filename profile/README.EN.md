@@ -52,7 +52,7 @@ We appreciate all contributions and suggestions. If this project helps your own 
 No. We have no official ties to the RAE. This project simply provides tools the institution currently does not.
 
 ### Can I use this for my own project?
-Absolutely—feel free! It’s open to all, though donations to help keep the servers running are always welcome: [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+Absolutely—feel free! It’s open to all, though donations to help keep the servers running are always welcome: [Ko-Fi](https://ko-fi.com/sonirico).
 
 ### What happens if the RAE changes their website?
 The API relies on scraping. If their HTML changes, certain features might be temporarily interrupted. We do store data locally to help ensure some continuity when that happens.
@@ -60,7 +60,7 @@ The API relies on scraping. If their HTML changes, certain features might be tem
 ## ❤️ Support the Project
 
 This initiative is maintained on a volunteer basis. If you find it useful, you can:
-- Buy us a coffee at [BuyMeACoffee](https://buymeacoffee.com/sonirico).
+- Buy us a coffee at [Ko-Fi](https://ko-fi.com/sonirico).
 - Share **rae-api.com** with your community.
 
 Thanks to all these people and organizations for supporting this project:
