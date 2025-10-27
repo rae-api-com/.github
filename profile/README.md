@@ -69,9 +69,6 @@ Gracias a estas personas y organizaciones por apoyar este proyecto:
   <a styhref="https://github.com/madebygps">
     <img src="https://github.com/madebygps.png" width="64px" alt="@madebygps" />
   </a>
-  <a href="https://github.com/nikitavoloboev">
-    <img src="https://github.com/nikitavoloboev.png" width="64px" alt="@nikitavoloboev" />
-  </a>
 </p>
 
 ## 📢 Mantente informado/a
