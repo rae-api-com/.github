@@ -66,11 +66,8 @@ This initiative is maintained on a volunteer basis. If you find it useful, you c
 Thanks to all these people and organizations for supporting this project:
 
 <p align="center">
-  <a styhref="https://github.com/madebygps">
+  <a href="https://github.com/madebygps">
     <img src="https://github.com/madebygps.png" width="64px" alt="@madebygps" />
-  </a>
-  <a href="https://github.com/nikitavoloboev">
-    <img src="https://github.com/nikitavoloboev.png" width="64px" alt="@nikitavoloboev" />
   </a>
 </p>
 
