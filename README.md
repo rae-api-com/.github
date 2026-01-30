@@ -1,82 +1,55 @@
-# RAE API Organization - GitHub Profile
+# RAE API Organization
 
-Welcome to the **RAE API Organization**! This GitHub organization is dedicated to providing tools and resources for developers and enthusiasts who want to interact with the Spanish language in creative and programmatic ways. Our flagship project, **rae-api.com**, is an unofficial API for querying the Real Academia Española (RAE) dictionary and related linguistic data.
+Welcome to the **RAE API Organization**. We provide tools and resources for developers who want to interact with the Spanish language programmatically. Our flagship project, **rae-api.com**, is an unofficial API for querying the Real Academia Española (RAE) dictionary.
 
----
+## Projects
 
-## 🌟 Mission
+- **[rae-api.com](https://rae-api.com)** — Unofficial API for the RAE dictionary: definitions, conjugations, reverse search, word of the day, polysemic words and locutions.
+- **[go-rae](https://github.com/rae-api-com/go-rae)** — Go client library for the RAE API.
+- **[rae-tui](https://github.com/rae-api-com/rae-tui)** — Terminal-based interface for exploring the dictionary.
+- **[rae-raycast](https://github.com/rae-api-com/rae-raycast)** — Raycast extension for quick lookups.
+- **[rae-mcp](https://github.com/rae-api-com/rae-mcp)** — Model Context Protocol server for LLM integration.
 
-The goal of this organization is to make the Spanish language more accessible to developers by providing APIs, libraries, and tools that simplify working with words, definitions, and conjugations. Whether you're building a game like Wordle/PalabReto, creating educational tools, or conducting linguistic research, our resources are here to help.
+## Rate Limiting & API Keys
 
----
+Due to continuous attacks (DDoS, abusive scraping) affecting service quality, we've implemented rate limiting. **API keys are free** — this isn't monetization, it's abuse protection.
 
-## 🚀 Projects
+| Tier | Requests/min | Requests/day | How to get it |
+|------|-------------|--------------|---------------|
+| Free | 10 | 100 | No API key needed |
+| Developer | 60 | 5,000 | [Request for free](https://github.com/rae-api-com/.github/issues/new?title=[API%20Key%20Request]&labels=api-key-request) |
+| Extended | 300 | 50,000 | Request (high-volume projects) |
 
-### 1. **[rae-api.com](https://rae-api.com)**
-An unofficial API for querying the RAE dictionary. It provides:
-- Definitions of words.
-- Conjugations for verbs.
-- Reverse search (find words based on their definitions).
-- Word of the day.
-- Support for polysemic words and locutions.
+## In Development
 
-### 2. **[go-rae](https://github.com/rae-api-com/go-rae)**
-A Go client library for interacting with the RAE API. It simplifies integration with the API for Go developers.
+- Fuzzy search for partial matches and derived words
+- Inverse indexing for definition-based lookups
+- Improved parsing for RAE's HTML changes
 
-### 3. **rae-tui**
-A terminal-based user interface (TUI) for exploring the RAE dictionary interactively. Built with `tview` and designed for a seamless user experience.
+## Why this exists
 
----
+The RAE hasn't provided a public API or database for their dictionary. Many developers have struggled to find a reliable way to query Spanish words programmatically. This project fills that gap.
 
-## 🛠️ Features in Progress
+## FAQ
 
-- **Fuzzy Search**: Improve search results for partial matches or derived words.
-- **Inverse Indexing**: Enable reverse lookups for words based on their definitions.
-- **Improved Parsing**: Handle the chaotic and ever-changing HTML structure of the RAE website.
-- **Authentication**: Introduce API keys to manage usage and prevent abuse.
-- **Rate Limiting**: Ensure fair usage for all users.
+**Is this official?**  
+No. This is an unofficial API with no affiliation to the RAE.
 
----
+**Can I use this for my project?**  
+Yes. It's free for everyone. Donations help keep the servers running: [Ko-Fi](https://ko-fi.com/sonirico).
 
-## 💡 Inspiration
+**What if the RAE changes their website?**  
+The API relies on scraping. Changes to their HTML can temporarily break features. We store data locally to ensure continuity.
 
-This project was born out of the need for a reliable resource to query Spanish words programmatically. Many developers, including myself, have struggled to find an official API or database for the RAE dictionary. After exploring alternatives like web scraping and reverse-engineering, I decided to create **rae-api.com** to fill this gap.
+## Support
 
----
-
-## 🤝 Community
-
-We welcome contributions, feedback, and collaboration! If you're using our tools for your projects, let us know. Some examples of how the API has been used:
-- Word-based games like Wordle/PalabReto.
-- Educational tools for learning Spanish.
-- Integration with flashcard apps like Anki.
-
----
-
-## 💬 FAQ
-
-### Is this an official API from the RAE?
-No, this is an unofficial API created to make the RAE's linguistic data more accessible. The HTML structure of the RAE website is complex and changes frequently, so this project aims to simplify access for developers.
-
-### Can I use this API for my project?
-Yes! The API is free to use, but donations are welcome to help maintain the server. If you're using it heavily, consider supporting the project via [Ko-Fi](https://ko-fi.com/sonirico).
-
-### What happens if the RAE changes its website?
-The API relies on scraping the RAE's website, so changes to their HTML structure can temporarily break the service. However, we store parsed data locally to ensure continuity even if scraping becomes temporarily unavailable.
-
----
-
-## ❤️ Support the Project
-
-Maintaining this API is challenging and resource-intensive. If you find it useful, consider supporting the project:
+If you find this useful, consider supporting the project:
 - [Ko-Fi](https://ko-fi.com/sonirico)
-- Spread the word about **rae-api.com**!
+- Share rae-api.com with others
 
----
+Thanks to our supporters:
 
-## 📢 Stay Updated
-
-Follow this GitHub organization for updates on new features, bug fixes, and future plans. If you have suggestions or want to contribute, feel free to open an issue or pull request.
-
-Thank you for supporting the RAE API project! Together, we can make the Spanish language more accessible to everyone.
-
+<p align="center">
+  <a href="https://github.com/madebygps"><img src="https://github.com/madebygps.png" width="48px" alt="@madebygps" /></a>
+  <a href="https://github.com/nachocerrato"><img src="https://github.com/nachocerrato.png" width="48px" alt="@nachocerrato" /></a>
+</p>

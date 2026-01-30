@@ -1,84 +1,61 @@
 # RAE API Org
 
-Welcome to the **RAE API Organization**. Here you’ll find a collection of tools and resources created for those who want to interact with the Spanish language programmatically. The motivation is simple: the Real Academia Española (RAE) hasn’t shown much interest in providing a public, developer-friendly API for its dictionary. So, in the absence of official solutions, we decided to build our own.
+Welcome to the **RAE API Organization**. Here you'll find tools for interacting with the Spanish language programmatically. The Real Academia Española (RAE) hasn't shown interest in providing a public API for its dictionary, so we built our own.
 
-This is a non-profit project. Our goal is purely educational and collaborative—we don’t intend to claim ownership over RAE’s content (which, for the record, is kept private despite being about a language we all speak). By using this API and its tools, you’re responsible for how you use its resources.
+This is a non-profit project with educational and collaborative goals. We don't claim ownership over RAE's content. By using this API, you're responsible for how you use its resources.
 
-## 🌟 Mission
+## Projects
 
-We aim to make modern Spanish language data—definitions, conjugations, and more—easy to access for developers. Whether you’re building word games, educational apps, or linguistic research tools, you’ll hopefully find a useful, straightforward base here, albeit unofficial.
+- **[rae-api.com](https://rae-api.com)** — Unofficial API for the RAE dictionary: definitions, conjugations, reverse search, word of the day.
+- **[go-rae](https://github.com/rae-api-com/go-rae)** — Go client.
+- **[rae-tui](https://github.com/rae-api-com/rae-tui)** — Terminal interface.
+- **[rae-raycast](https://github.com/rae-api-com/rae-raycast)** — Raycast extension.
+- **[rae-mcp](https://github.com/rae-api-com/rae-mcp)** — LLM integration via Model Context Protocol.
 
-## 🚀 Projects
+## Rate Limiting & API Keys
 
-### 1. **[rae-api.com](https://rae-api.com)**
-An unofficial API for querying the RAE dictionary. It offers:
-- Word definitions.
-- Verb conjugations.
-- Reverse search (find words by their definition).
-- Word of the day.
-- Support for polysemous words and idiomatic expressions.
+Due to continuous attacks (DDoS, abusive scraping) affecting service quality, we've implemented rate limiting. **API keys are free** — this isn't monetization, it's abuse protection.
 
-### 2. **[go-rae](https://github.com/rae-api-com/go-rae)**
-A Go client for easy integration with the RAE API.
+| Tier | Requests/min | Requests/day | How to get it |
+|------|-------------|--------------|---------------|
+| Free | 10 | 100 | No API key (anonymous) |
+| Developer | 60 | 5,000 | [Request for free](https://github.com/rae-api-com/.github/issues/new?title=[API%20Key%20Request]&labels=api-key-request) |
+| Extended | 300 | 50,000 | Request (high-volume projects) |
 
-### 3. **[rae-tui](https://github.com/rae-api-com/rae-tui)**
-A terminal-based user interface to explore the RAE dictionary interactively.
+```bash
+curl "https://rae-api.com/api/words/hola?api_key=YOUR_API_KEY"
+# or via header
+curl -H "X-API-Key: YOUR_API_KEY" "https://rae-api.com/api/words/hola"
+```
 
-### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
-A Raycast extension to query words, verbs, conjugations, the word of the day, and even get random words—directly from your desktop.
+## In Development
 
-### 5. **[rae-mcp](https://github.com/rae-api-com/rae-mcp)**
-Implementation of a Model Context Protocol (MCP) server for the Royal Spanish Academy (RAE) API. It allows language models to interact with RAE's dictionary and linguistic resources.
+- Fuzzy search for partial matches
+- Inverse indexing for definition-based search
+- Improved parsing for RAE's HTML changes
 
-## 🛠️ Features in Progress
+## FAQ
 
-- **Fuzzy Search:** More useful results even with inexact matches or derived words.
-- **Inverse Indexing:** Search for words by their definitions.
-- **Improved Parsing:** Adapting to the RAE’s ever-changing HTML structure.
-- **Authentication and Limits:** To ensure fair use and prevent abuse.
-- **Apify Integration:** More advanced workflows using [Apify](https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr).
+**Is this official?**  
+No. We have no affiliation with the RAE.
 
-## 💡 Inspiration
+**Can I use this for my project?**  
+Yes, it's free to use. Donations welcome: [Ko-Fi](https://ko-fi.com/sonirico).
 
-The lack of an official API—or even a public database—from the RAE has left many of us searching for workarounds: scraping, collaboration, and a bit of patience. This project exists, modestly, to fill that gap and make dictionary queries easier for those who need them.
+**What if the RAE changes their website?**  
+The API uses scraping. If the structure changes, some features might be temporarily interrupted. We store data locally to ensure continuity.
 
-## 🤝 Community
+## Support the project
 
-We appreciate all contributions and suggestions. If this project helps your own tools (word games, educational apps, research, Anki integrations...), let us know and help us improve.
+If you find it useful, consider buying us a coffee at [Ko-Fi](https://ko-fi.com/sonirico) or sharing rae-api.com.
 
-## 💬 FAQ
-
-### Is this official?
-No. We have no official ties to the RAE. This project simply provides tools the institution currently does not.
-
-### Can I use this for my own project?
-Absolutely—feel free! It’s open to all, though donations to help keep the servers running are always welcome: [Ko-Fi](https://ko-fi.com/sonirico).
-
-### What happens if the RAE changes their website?
-The API relies on scraping. If their HTML changes, certain features might be temporarily interrupted. We do store data locally to help ensure some continuity when that happens.
-
-## ❤️ Support the Project
-
-This initiative is maintained on a volunteer basis. If you find it useful, you can:
-- Buy us a coffee at [Ko-Fi](https://ko-fi.com/sonirico).
-- Share **rae-api.com** with your community.
-
-Thanks to all these people and organizations for supporting this project:
+Thanks to those who support this project:
 
 <p align="center">
-  <a href="https://github.com/madebygps">
-    <img src="https://github.com/madebygps.png" width="64px" alt="@madebygps" />
-  </a>
+  <a href="https://github.com/madebygps"><img src="https://github.com/madebygps.png" width="48px" alt="@madebygps" /></a>
+  <a href="https://github.com/nachocerrato"><img src="https://github.com/nachocerrato.png" width="48px" alt="@nachocerrato" /></a>
 </p>
-
-## 📢 Stay Informed
-
-Follow this repository for updates, fixes and new features. We’re always open to community support and contributions.
-
-Thanks for your interest and for helping make the Spanish language more accessible in the digital world.
 
 ---
 
- 
-[🇪🇸 Lee la versión en español](./README.md)
-
+[Leer en español](./README.md)

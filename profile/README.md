@@ -1,82 +1,61 @@
 # RAE API Org
 
-Bienvenido/a a la **RAE API Organization**. Aquí encontrarás un conjunto de herramientas y recursos creados para quienes desean interactuar con el idioma español de forma programática. Todo esto surge, en parte, porque la Real Academia Española parece poco interesada en ofrecer una API pública y útil para su diccionario. Así que, ante la ausencia de soluciones oficiales, hemos decidido aportar la nuestra.
+Bienvenido/a a la **RAE API Organization**. Aquí encontrarás herramientas para interactuar con el idioma español de forma programática. Todo esto surge porque la Real Academia Española parece poco interesada en ofrecer una API pública para su diccionario. Ante la ausencia de soluciones oficiales, hemos decidido aportar la nuestra.
 
-Este proyecto es sin ánimo de lucro. Lo hacemos con fines educativos y colaborativos, sin pretender apropiarnos del contenido de la RAE (que, por cierto, mantiene como privado aunque hable del idioma de todos). Usar esta API y sus herramientas depende de ti: cada cual es responsable de cómo emplea estos recursos.
+Este proyecto es sin ánimo de lucro, con fines educativos y colaborativos. No pretendemos apropiarnos del contenido de la RAE. Usar esta API depende de ti: cada cual es responsable de cómo emplea estos recursos.
 
-## 🌟 Misión
+## Proyectos
 
-Queremos facilitar el acceso a los datos del español moderno: definiciones, conjugaciones, y más. Si desarrollas juegos de palabras, creas material educativo, o investigas el lenguaje, puedes encontrar aquí una base útil y sencilla, aunque no oficial.
+- **[rae-api.com](https://rae-api.com)** — API no oficial para consultar el diccionario de la RAE: definiciones, conjugaciones, búsquedas inversas, palabra del día.
+- **[go-rae](https://github.com/rae-api-com/go-rae)** — Cliente en Go.
+- **[rae-tui](https://github.com/rae-api-com/rae-tui)** — Interfaz de terminal.
+- **[rae-raycast](https://github.com/rae-api-com/rae-raycast)** — Extensión para Raycast.
+- **[rae-mcp](https://github.com/rae-api-com/rae-mcp)** — Integración con LLMs via Model Context Protocol.
 
-## 🚀 Proyectos
+## Rate Limiting y API Keys
 
-### 1. **[rae-api.com](https://rae-api.com)**
-API no oficial para consultar el diccionario de la RAE. Permite:
-- Ver definiciones.
-- Revisar conjugaciones verbales.
-- Hacer búsquedas inversas (encontrar palabras a partir de una definición).
-- Obtener la palabra del día.
-- Gestionar palabras polisémicas y locuciones.
+Debido a continuos ataques (DDoS, scraping abusivo) que afectaban la calidad del servicio, hemos implementado rate limiting. **Las API keys son gratuitas** — esto no es monetización, es protección contra abusos.
 
-### 2. **[go-rae](https://github.com/rae-api-com/go-rae)**
-Cliente en Go para integrar fácilmente la RAE API sobre proyectos en este lenguaje.
+| Tier | Requests/min | Requests/día | Cómo obtenerla |
+|------|-------------|--------------|----------------|
+| Free | 10 | 100 | Sin API key (anónimo) |
+| Developer | 60 | 5,000 | [Solicitar gratis](https://github.com/rae-api-com/.github/issues/new?title=[API%20Key%20Request]&labels=api-key-request) |
+| Extended | 300 | 50,000 | Solicitar (proyectos de alto volumen) |
 
-### 3. **[rae-tui](https://github.com/rae-api-com/rae-tui)**
-Interfaz de usuario en la terminal para explorar el diccionario de forma interactiva.
+```bash
+curl "https://rae-api.com/api/words/hola?api_key=TU_API_KEY"
+# o via header
+curl -H "X-API-Key: TU_API_KEY" "https://rae-api.com/api/words/hola"
+```
 
-### 4. **[rae-raycast](https://github.com/rae-api-com/rae-raycast)**
-Extensión de Raycast para consultar palabras, conjugaciones, palabra del día y obtener palabras aleatorias, directamente desde tu escritorio.
+## En Desarrollo
 
-### 5. **[rae-mcp](https://github.com/rae-api-com/rae-mcp)**
-La integración con LLMs mediante Model Context Protocol.
+- Búsqueda difusa para coincidencias parciales
+- Índice inverso para búsquedas por definición
+- Mejora de parsing ante cambios del HTML de la RAE
 
-## 🛠️ En Desarrollo
+## FAQ
 
-- **Búsqueda difusa:** Resultados útiles aun sin coincidencia exacta o con palabras derivadas.
-- **Índice inverso:** Para búsquedas por definición.
-- **Mejora de parsing:** Adaptándonos a los cambios frecuentes del HTML de la RAE.
-- **Autenticación y límites:** Para garantizar un uso razonable y prevenir abusos.
-- **Integración con Apify:** Para flujos de trabajo avanzados usando [Apify](https://apify.com/sonirico/diccionario-de-la-real-academia-de-la-lengua-espanola-rae-ppr).
+**¿Es esto oficial?**  
+No. No hay relación oficial con la RAE.
 
-## 💡 Inspiración
+**¿Puedo usarlo para mi proyecto?**  
+Sí, es de uso libre. Donaciones bienvenidas: [Ko-Fi](https://ko-fi.com/sonirico).
 
-La falta de una API oficial —o siquiera una base de datos pública de la RAE— ha hecho que muchos hayamos optado por buscar alternativas: scraping, colaboración y algo de paciencia. Este proyecto pretende, modestamente, llenar ese vacío y facilitar el trabajo a quienes necesitan consultar el diccionario sin complicaciones.
+**¿Qué pasa si la RAE cambia su web?**  
+La API usa scraping. Si cambia la estructura, algunos servicios pueden interrumpirse temporalmente. Almacenamos datos localmente para dar continuidad.
 
-## 🤝 Comunidad
+## Apoya el proyecto
 
-Agradecemos las contribuciones y sugerencias. Si este proyecto te ayuda en tus proyectos (juegos, apps educativas, investigación, integración con sistemas como Anki...), cuéntanoslo y ayuda a mejorar la herramienta.
+Si le sacas partido, considera invitarnos a un café en [Ko-Fi](https://ko-fi.com/sonirico) o compartir rae-api.com.
 
-## 💬 Preguntas Frecuentes
-
-### ¿Es esto oficial?
-No. No hay ninguna relación oficial con la RAE. Este proyecto busca facilitar el acceso desarrollando herramientas que la institución, por el momento, no proporciona.
-
-### ¿Puedo usarlo para mi proyecto?
-Sí, es de uso libre, aunque cualquier donación para ayudar con los servidores será bienvenida: [Ko-Fi](https://ko-fi.com/sonirico).
-
-### ¿Qué pasa si la RAE cambia su web?
-La API utiliza scraping. Si la estructura de la web cambia, es posible que algunos servicios se interrumpan temporalmente. Aun así, almacenamos datos localmente para ofrecer continuidad en lo posible.
-
-## ❤️ Apoya este proyecto
-
-Dedicamos tiempo y recursos para mantener esta iniciativa. Si le sacas partido, puedes:
-- Invitarnos a un café en [Ko-Fi](https://ko-fi.com/sonirico).
-- Compartir **rae-api.com** para que llegue a más gente.
-
-Gracias a estas personas y organizaciones por apoyar este proyecto:
+Gracias a quienes apoyan este proyecto:
 
 <p align="center">
-  <a styhref="https://github.com/madebygps">
-    <img src="https://github.com/madebygps.png" width="64px" alt="@madebygps" />
-  </a>
+  <a href="https://github.com/madebygps"><img src="https://github.com/madebygps.png" width="48px" alt="@madebygps" /></a>
+  <a href="https://github.com/nachocerrato"><img src="https://github.com/nachocerrato.png" width="48px" alt="@nachocerrato" /></a>
 </p>
-
-## 📢 Mantente informado/a
-
-Sigue este repositorio para enterarte de novedades, correcciones y futuras mejoras. Siempre estamos abiertos a aportes y ayuda de la comunidad.
-
-Gracias por tu interés y por contribuir a que la lengua española sea un poco más accesible en el mundo digital.
 
 ---
 
-[🇬🇧 Read English Version](./README.EN.md)
+[Read in English](./README.EN.md)

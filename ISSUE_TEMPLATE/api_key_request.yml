@@ -1,0 +1,90 @@
+name: API Key Request
+description: Solicitar una API key gratuita para rae-api.com
+title: "[API Key Request] "
+labels: ["api-key-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Solicitud de API Key
+        
+        Las API keys son **gratuitas**. Este formulario nos ayuda a entender cómo se usa la API y prevenir abusos.
+        
+        ---
+
+  - type: input
+    id: project_name
+    attributes:
+      label: Nombre del proyecto
+      description: ¿Cómo se llama tu proyecto o aplicación?
+      placeholder: "Mi App de Vocabulario"
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_description
+    attributes:
+      label: Descripción del proyecto
+      description: Describe brevemente qué hace tu proyecto y cómo usará la API.
+      placeholder: "Una app móvil para aprender vocabulario español mediante flashcards..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: project_type
+    attributes:
+      label: Tipo de proyecto
+      options:
+        - Personal / Hobby
+        - Educativo / Académico
+        - Open Source
+        - Startup / Comercial (B2C)
+        - Empresa / Comercial (B2B)
+        - Otro
+    validations:
+      required: true
+
+  - type: input
+    id: project_url
+    attributes:
+      label: URL del proyecto (opcional)
+      description: Web, repositorio de GitHub, o cualquier enlace relevante.
+      placeholder: "https://github.com/usuario/proyecto"
+
+  - type: dropdown
+    id: estimated_requests
+    attributes:
+      label: Requests estimadas por día
+      description: Aproximadamente, ¿cuántas peticiones esperas hacer?
+      options:
+        - "< 100 (tier Free es suficiente)"
+        - "100 - 1,000"
+        - "1,000 - 5,000 (tier Developer)"
+        - "5,000 - 50,000 (tier Extended)"
+        - "> 50,000 (contactar primero)"
+    validations:
+      required: true
+
+  - type: input
+    id: contact_email
+    attributes:
+      label: Email de contacto
+      description: Para enviarte la API key y notificaciones importantes.
+      placeholder: "tu@email.com"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Términos de uso
+      description: Por favor, confirma que entiendes las condiciones.
+      options:
+        - label: Entiendo que esta API es **no oficial** y no está afiliada con la RAE.
+          required: true
+        - label: Entiendo que la API key puede ser **revocada** en caso de abuso o uso excesivo.
+          required: true
+        - label: No usaré la API para actividades ilegales, spam, o scraping masivo para redistribución.
+          required: true
+        - label: Incluiré atribución a rae-api.com en mi proyecto cuando sea posible.
+          required: false
