@@ -19,7 +19,7 @@ Debido a continuos ataques (DDoS, scraping abusivo) que afectaban la calidad del
 | Tier | Requests/min | Requests/día | Cómo obtenerla |
 |------|-------------|--------------|----------------|
 | Free | 10 | 100 | Sin API key (anónimo) |
-| Developer | 60 | 5,000 | [Solicitar gratis](https://github.com/rae-api-com/.github/issues/new?title=[API%20Key%20Request]&labels=api-key-request) |
+| Developer | 60 | 5,000 | [Solicitar gratis](https://github.com/rae-api-com/.github/issues/new?template=api-key-request.md) |
 | Extended | 300 | 50,000 | Solicitar (proyectos de alto volumen) |
 
 ```bash

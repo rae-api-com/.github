@@ -17,7 +17,7 @@ Due to continuous attacks (DDoS, abusive scraping) affecting service quality, we
 | Tier | Requests/min | Requests/day | How to get it |
 |------|-------------|--------------|---------------|
 | Free | 10 | 100 | No API key needed |
-| Developer | 60 | 5,000 | [Request for free](https://github.com/rae-api-com/.github/issues/new?title=[API%20Key%20Request]&labels=api-key-request) |
+| Developer | 60 | 5,000 | [Request for free](https://github.com/rae-api-com/.github/issues/new?template=api-key-request.md) |
 | Extended | 300 | 50,000 | Request (high-volume projects) |
 
 ## In Development
