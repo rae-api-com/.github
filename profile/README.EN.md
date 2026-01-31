@@ -30,9 +30,12 @@ curl -H "X-API-Key: YOUR_API_KEY" "https://rae-api.com/api/words/hola"
 
 ## In Development
 
-- Fuzzy search for partial matches
-- Inverse indexing for definition-based search
-- Improved parsing for RAE's HTML changes
+- [x] Standard definitions from dle.rae.es
+- [x] Random word with length filters
+- [x] Word of the day
+- [x] Fuzzy search for partial matches
+- [x] Reverse index for definition-based searches
+- [ ] Improved parsing for RAE HTML changes
 
 ## FAQ
 

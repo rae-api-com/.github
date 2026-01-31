@@ -30,9 +30,12 @@ curl -H "X-API-Key: TU_API_KEY" "https://rae-api.com/api/words/hola"
 
 ## En Desarrollo
 
-- Búsqueda difusa para coincidencias parciales
-- Índice inverso para búsquedas por definición
-- Mejora de parsing ante cambios del HTML de la RAE
+- [x] Definiciones estándar segun dle.rae.es
+- [x] Palabra aleatoria con filtros de longitud
+- [x] Palabra del día
+- [x] Búsqueda difusa para coincidencias parciales
+- [x] Índice inverso para búsquedas por definición
+- [ ] Mejora de parsing ante cambios del HTML de la RAE
 
 ## FAQ
 
