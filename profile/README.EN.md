@@ -6,7 +6,7 @@ This is a non-profit project with educational and collaborative goals. We don't 
 
 ## Projects
 
-- **[rae-api.com](https://rae-api.com)** — Unofficial API for the RAE dictionary: definitions, conjugations, reverse search, word of the day.
+- **[rae-api.com](https://rae-api.com)** — Unofficial API for the RAE dictionary: definitions, conjugations, reverse search, word of the day, locutions and polysemic words.
 - **[go-rae](https://github.com/rae-api-com/go-rae)** — Go client.
 - **[rae-tui](https://github.com/rae-api-com/rae-tui)** — Terminal interface.
 - **[rae-raycast](https://github.com/rae-api-com/rae-raycast)** — Raycast extension.
@@ -19,8 +19,8 @@ Due to continuous attacks (DDoS, abusive scraping) affecting service quality, we
 | Tier | Requests/min | Requests/day | How to get it |
 |------|-------------|--------------|---------------|
 | Free | 10 | 100 | No API key (anonymous) |
-| Developer | 60 | 5,000 | [Request for free](https://github.com/rae-api-com/.github/issues/new?template=api-key-request.md) |
-| Extended | 300 | 50,000 | Request (high-volume projects) |
+| Developer | 60 | 5,000 | [Self-service (free)](https://rae-api.com/dashboard) |
+| Extended | 300 | 50,000 | [Contact us](https://rae-api.com/dashboard) |
 
 ```bash
 curl "https://rae-api.com/api/words/hola?api_key=YOUR_API_KEY"

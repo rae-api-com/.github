@@ -6,7 +6,7 @@ Este proyecto es sin ánimo de lucro, con fines educativos y colaborativos. No p
 
 ## Proyectos
 
-- **[rae-api.com](https://rae-api.com)** — API no oficial para consultar el diccionario de la RAE: definiciones, conjugaciones, búsquedas inversas, palabra del día.
+- **[rae-api.com](https://rae-api.com)** — API no oficial para consultar el diccionario de la RAE: definiciones, conjugaciones, búsquedas inversas, palabra del día, locuciones y palabras polisémicas.
 - **[go-rae](https://github.com/rae-api-com/go-rae)** — Cliente en Go.
 - **[rae-tui](https://github.com/rae-api-com/rae-tui)** — Interfaz de terminal.
 - **[rae-raycast](https://github.com/rae-api-com/rae-raycast)** — Extensión para Raycast.
@@ -19,8 +19,8 @@ Debido a continuos ataques (DDoS, scraping abusivo) que afectaban la calidad del
 | Tier | Requests/min | Requests/día | Cómo obtenerla |
 |------|-------------|--------------|----------------|
 | Free | 10 | 100 | Sin API key (anónimo) |
-| Developer | 60 | 5,000 | [Solicitar gratis](https://github.com/rae-api-com/.github/issues/new?template=api-key-request.md) |
-| Extended | 300 | 50,000 | Solicitar (proyectos de alto volumen) |
+| Developer | 60 | 5,000 | [Autoservicio (gratis)](https://rae-api.com/dashboard) |
+| Extended | 300 | 50,000 | [Contactar](https://rae-api.com/dashboard) |
 
 ```bash
 curl "https://rae-api.com/api/words/hola?api_key=TU_API_KEY"
