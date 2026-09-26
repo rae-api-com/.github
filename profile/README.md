@@ -51,9 +51,19 @@ Si le sacas partido, considera invitarnos a un café en [Ko-Fi](https://ko-fi.co
 
 Gracias a quienes apoyan este proyecto:
 
+**Ko-fi**
+
 <p align="center">
   <a href="https://github.com/madebygps"><img src="https://github.com/madebygps.png" width="48px" alt="@madebygps" /></a>
   <a href="https://github.com/nachocerrato"><img src="https://github.com/nachocerrato.png" width="48px" alt="@nachocerrato" /></a>
+</p>
+
+**GitHub Sponsors**
+
+<p align="center">
+<!-- sponsors:start -->
+  <a href="https://github.com/calocen"><img src="https://github.com/calocen.png" width="48px" alt="@calocen" /></a>
+<!-- sponsors:end -->
 </p>
 
 ---

@@ -1,0 +1,43 @@
+name: Refresh sponsors in the profile
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+jobs:
+  refresh-sponsors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+          cache-dependency-path: sponsors/go.sum
+
+      # GITHUB_TOKEN cannot read the organization's sponsorships: SPONSORS_TOKEN
+      # is a PAT with read:org.
+      - name: Refresh the sponsors block in both profiles
+        working-directory: sponsors
+        env:
+          SPONSORS_TOKEN: ${{ secrets.SPONSORS_TOKEN }}
+        run: |
+          go run . -readme ../profile/README.md
+          go run . -readme ../profile/README.EN.md
+
+      - name: Commit the change, if any
+        run: |
+          if git diff --quiet profile; then
+            echo "No sponsor changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh sponsors" profile
+          git push
