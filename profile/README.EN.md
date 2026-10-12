@@ -63,6 +63,7 @@ Thanks to those who support this project:
 <p align="center">
 <!-- sponsors:start -->
   <a href="https://github.com/calocen"><img src="https://github.com/calocen.png" width="48px" alt="@calocen" /></a>
+  <a href="https://github.com/lguzman79"><img src="https://github.com/lguzman79.png" width="48px" alt="@lguzman79" /></a>
 <!-- sponsors:end -->
 </p>
 
